@@ -3,10 +3,12 @@ import Accordian from "./components/accordian/Accordian";
 import ColorGen from "./components/ColorGen";
 import StarRating from "./components/star-rating/StarRating";
 import ColorSlider from "./components/ColorSlider";
+import ImageSlider from "./components/imageslider/ImageSlider";
 
 const App = () => {
   return (
     <>
+      <ImageSlider url={"https://picsum.photos/v2/list"} limit={"10"} />
       <Accordian />
       <ColorGen />
       <StarRating />
