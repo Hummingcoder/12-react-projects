@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
+import { FaSpinner } from "react-icons/fa";
 
 const ImageSlider = ({ url, limit }) => {
   const [images, setImages] = useState([]);
@@ -40,7 +41,7 @@ const ImageSlider = ({ url, limit }) => {
   if (loading) {
     return (
       <div className="w-full h-screen grid place-content-center">
-        loading...
+        <FaSpinner className="animate-spin" size={40} />
       </div>
     );
   }
