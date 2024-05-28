@@ -34,6 +34,10 @@ const LoadData = () => {
     }
   }, [products]);
 
+  if (loading) {
+    return <p>loading...</p>;
+  }
+
   return (
     <div className="flex flex-col gap-3 mb-12">
       <div className=" grid grid-cols-4">

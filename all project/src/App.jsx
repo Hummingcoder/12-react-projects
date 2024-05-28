@@ -5,6 +5,8 @@ import StarRating from "./components/star-rating/StarRating";
 import ColorSlider from "./components/ColorSlider";
 import ImageSlider from "./components/imageslider/ImageSlider";
 import LoadData from "./components/load-more-data/LoadData";
+import SideBar from "./components/sidebar/SideBar";
+import menus from "./components/sidebar/data";
 
 const App = () => {
   return (
@@ -15,6 +17,7 @@ const App = () => {
       <ColorGen />
       <StarRating />
       <ColorSlider />
+      <SideBar menus={menus} />
     </>
   );
 };
