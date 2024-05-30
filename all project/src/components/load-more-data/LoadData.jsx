@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from "react";
 
 const LoadData = () => {
-  const [loading, setLoading] = useState(false);
   const [products, setProducts] = useState([]);
   const [count, setCount] = useState(0);
   const [disable, setdisable] = useState(false);
 
   async function fetchData() {
     try {
-      setLoading(true);
-
       const response = await fetch(
         `https://dummyjson.com/products?limit=20&skip=${count * 20}`
       );
@@ -20,7 +17,7 @@ const LoadData = () => {
         setProducts((prev) => [...prev, ...data.products]);
       }
     } catch (error) {
-      setLoading(false);
+      console.log(error.message);
     }
   }
 
@@ -33,10 +30,6 @@ const LoadData = () => {
       setdisable(true);
     }
   }, [products]);
-
-  if (loading) {
-    return <p>loading...</p>;
-  }
 
   return (
     <div className="flex flex-col gap-3 mb-12">
