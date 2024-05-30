@@ -7,17 +7,21 @@ import ImageSlider from "./components/imageslider/ImageSlider";
 import LoadData from "./components/load-more-data/LoadData";
 import SideBar from "./components/sidebar/SideBar";
 import menus from "./components/sidebar/data";
+import Cardgame from "./components/bubblegame/Cardgame";
+import Darkmode from "./components/darkmode/Darkmode";
 
 const App = () => {
   return (
     <>
-      <ImageSlider url={"https://picsum.photos/v2/list"} limit={"10"} />
+      {/* <ImageSlider url={"https://picsum.photos/v2/list"} limit={"10"} />
       <LoadData />
       <Accordian />
       <ColorGen />
       <StarRating />
       <ColorSlider />
-      <SideBar menus={menus} />
+      <SideBar menus={menus} /> 
+      <Cardgame /> */}
+      <Darkmode />
     </>
   );
 };
