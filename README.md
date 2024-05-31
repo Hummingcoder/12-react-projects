@@ -9,5 +9,7 @@
 <li>image slider</li>
 <li>Load more data with api</li>
 <li>tree list</li>
+<li>dark mode</li>
+<li>scroll indicator</li>
 </ol>
 # 12-react-projects
