@@ -19,7 +19,6 @@ const App = () => {
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight;
     let scrolled = (scrollH / pageH) * 100;
-    console.log(scrolled);
     indicator.current.style.width = `${scrolled}%`;
   }
   useEffect(() => {
