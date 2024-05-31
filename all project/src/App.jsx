@@ -23,7 +23,7 @@ const App = () => {
     indicator.current.style.width = `${scrolled}%`;
   }
   useEffect(() => {
-    window.addEventListener("scroll", handleIndicator());
+    window.addEventListener("scroll", handleIndicator);
   }, []);
 
   return (
