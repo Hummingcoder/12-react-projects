@@ -12,5 +12,7 @@
 <li>dark mode</li>
 <li>scroll indicator</li>
 <li>modal </li>
+<li>github API or something idk (i'm dumb) </li>
+
 </ol>
 # 12-react-projects
