@@ -11,5 +11,6 @@
 <li>tree list</li>
 <li>dark mode</li>
 <li>scroll indicator</li>
+<li>modal </li>
 </ol>
 # 12-react-projects
