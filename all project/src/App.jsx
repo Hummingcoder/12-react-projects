@@ -9,6 +9,9 @@ import SideBar from "./components/sidebar/SideBar";
 import menus from "./components/sidebar/data";
 import Darkmode from "./components/darkmode/Darkmode";
 import ScrollIndicator from "./components/scroll-indicator/ScrollIndicator";
+import Tabs from "./components/tabs/Tabs";
+import Modal from "./components/modal/Modal";
+import Github from "./components/githubAPI/Github";
 
 const App = () => {
   const indicator = useRef();
@@ -36,9 +39,12 @@ const App = () => {
       <LoadData />
       <ColorGen />
       <StarRating />
+      <Github />
       <ColorSlider />
       <SideBar menus={menus} />
       <Darkmode />
+      <Modal />
+      <Tabs />
     </section>
   );
 };
