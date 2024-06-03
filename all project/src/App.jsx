@@ -12,6 +12,7 @@ import ScrollIndicator from "./components/scroll-indicator/ScrollIndicator";
 import Tabs from "./components/tabs/Tabs";
 import Modal from "./components/modal/Modal";
 import Github from "./components/githubAPI/Github";
+import AutoComp from "./components/search auto complete/AutoComp";
 
 const App = () => {
   const indicator = useRef();
@@ -45,6 +46,7 @@ const App = () => {
       <Darkmode />
       <Modal />
       <Tabs />
+      <AutoComp />
     </section>
   );
 };
