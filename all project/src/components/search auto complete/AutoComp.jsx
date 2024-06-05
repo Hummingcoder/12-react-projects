@@ -8,10 +8,12 @@ const AutoComp = () => {
   const [inputVal, setinputVal] = useState("");
 
   const handleInput = (e) => {
-    let val = e.target.value.toLowerCase();
+    let val = e.target.value;
     setinputVal(val);
     if (val.length > 1) {
-      let newData = data.filter((item) => item.toLowerCase().indexOf(val) > -1);
+      let newData = data.filter(
+        (item) => item.toLowerCase().indexOf(val.toLowerCase()) > -1
+      );
       setResults(newData);
       setloading(true);
     } else {
@@ -45,11 +47,12 @@ const AutoComp = () => {
       />{" "}
       {loading && (
         <div>
-          {results.map((item) => (
+          {results.map((item, i) => (
             <p
-              key={item}
+              key={i}
               onClick={() => {
                 setinputVal(item);
+                // setResults([]);
               }}
             >
               {item}
