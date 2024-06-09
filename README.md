@@ -14,6 +14,7 @@
 <li>modal </li>
 <li>fetch github API  </li>
 <li>auto search complete</li>
+<li>tic tac toe</li>
 
 </ol>
 # 12-react-projects
