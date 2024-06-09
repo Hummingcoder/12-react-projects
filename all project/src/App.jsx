@@ -13,6 +13,7 @@ import Tabs from "./components/tabs/Tabs";
 import Modal from "./components/modal/Modal";
 import Github from "./components/githubAPI/Github";
 import AutoComp from "./components/search auto complete/AutoComp";
+import TIC from "./components/TicTacToe/TIC";
 
 const App = () => {
   const indicator = useRef();
@@ -36,17 +37,18 @@ const App = () => {
         indicator={indicator}
       />
       <ImageSlider url={"https://picsum.photos/v2/list"} limit={"10"} />
-      <Accordian />
-      <LoadData />
-      <ColorGen />
-      <StarRating />
       <Github />
+      <LoadData />
+      <TIC />
+      <AutoComp />
+      <StarRating />
+      <Accordian />
       <ColorSlider />
       <SideBar menus={menus} />
       <Darkmode />
       <Modal />
       <Tabs />
-      <AutoComp />
+      <ColorGen />
     </section>
   );
 };
